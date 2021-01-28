@@ -25,7 +25,7 @@ class App extends Component {
         {
           nameProduct: "Plátano",
           imgProduct: "https://www.educima.com/foto-platano-dm5256.jpg",
-          category: "fruit",
+          category: "Fruta",
           units: "kg",
           unityPrice: 17
         }

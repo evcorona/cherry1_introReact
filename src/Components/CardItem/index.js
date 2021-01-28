@@ -16,7 +16,6 @@ function CardItem(props) {
           <Button className="bg-success border-0">Button</Button>
         </CardBody>
       </Card>
-
  )
 }
 
