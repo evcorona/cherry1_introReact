@@ -6,7 +6,6 @@ import {
 function CardItem(props) {
  let { nameProduct, imgProduct, category, units, unityPrice } = props
  return (
-
       <Card className="mt-3">
         <CardImg top width="100%" src={`${imgProduct}`} alt="Card image cap" />
         <CardBody>
