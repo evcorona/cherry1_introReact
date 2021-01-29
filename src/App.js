@@ -59,17 +59,17 @@ class App extends Component {
         <TopNavBar></TopNavBar>
         <Container>
           <Row>
-            <Col xs="6">
-              <Form className="border border-sucess p-3 shadow">
+            <Col sm="12" md={{ size: 6, offset: 3 }}>
+              <Form className="border border-success p-3 shadow">
                 <FormGroup>
                   <Label className="m-2">Nombre del Producto</Label>
-                  <Input name="nameProduct" onChange={this.changeHandler}></Input>
+                  <Input className="border border-success" name="nameProduct" onChange={this.changeHandler}></Input>
 
                   <Label className="m-2">Imagen</Label>
-                  <Input name="imgProduct" placeholder="Ingresa una URL" onChange={this.changeHandler}></Input>
+                  <Input className="border border-success" name="imgProduct" placeholder="Ingresa una URL" onChange={this.changeHandler}></Input>
 
                   <Label className="m-2">Categoría</Label>
-                  <Input type="select" name="category" onChange={this.changeHandler}>
+                  <Input className="border border-success" type="select" name="category" onChange={this.changeHandler}>
                     <option selected disabled>Selecciona la categoria</option>
                     <option value="Fruta">Fruta</option>
                     <option value="Vegetal">Vegetal</option>
@@ -78,7 +78,7 @@ class App extends Component {
                   </Input>
 
                   <Label className="m-2">Unidades</Label>
-                  <Input type="select" name="units" onChange={this.changeHandler}>
+                  <Input className="border border-success" type="select" name="units" onChange={this.changeHandler}>
                     <option selected disabled>Selecciona la categoria</option>
                     <option value="kg">Kilogramo</option>
                     <option value="lt">Litros</option>
@@ -86,7 +86,7 @@ class App extends Component {
                   </Input>
 
                   <Label className="m-2">Precio Unitario</Label>
-                  <InputGroup>
+                  <InputGroup className="border border-success">
                     <InputGroupAddon addonType="prepend">$</InputGroupAddon>
                     <Input name="unityPrice" placeholder="Precio" min={0} max={100} type="number" step="1" onChange={this.changeHandler} />
                     <InputGroupAddon addonType="append">.00</InputGroupAddon>
@@ -102,7 +102,7 @@ class App extends Component {
           <Row>
               {this.state.productsArray.map(data => {
                 return (
-                  <Col xs="4">
+                  <Col sm="12" md="4">
                     <CardItem
                       nameProduct={data.nameProduct}
                       imgProduct={data.imgProduct}
