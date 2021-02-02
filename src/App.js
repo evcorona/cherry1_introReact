@@ -40,7 +40,7 @@ function App() {
   const getAllProducts = () => {
     fetch(url).then(res => res.json()) /*que hace esto??*/
       .catch(error => console.error('Error', error))
-      .then(response => setAllProducts(Object.values(response)))
+      .then(response => setAllProducts(Object.values(response).reverse()))
   }
 
   const saveHandler = () => {
