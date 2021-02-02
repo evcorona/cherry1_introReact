@@ -1,6 +1,4 @@
 import {
-  NavLink,
-  Nav,
   Button
 } from 'reactstrap';
 
